@@ -1,10 +1,17 @@
 import { useState, ReactNode } from "react";
 import Sidebar from "./components/ui/sidebar";
-import Mhovercard from "./components/content/mhovercard";
 import Maccordion from "./components/content/maccordion";
+import Malert from "./components/content/malert";
+import Malertdialogue from "./components/content/malertdialogue";
+import Mhovercard from "./components/content/mhovercard";
 
 function App() {
-  const content: ReactNode[] = [<Maccordion />, <Mhovercard />];
+  const content: ReactNode[] = [
+    <Maccordion />,
+    <Malert />,
+    <Malertdialogue />,
+    <Mhovercard />,
+  ];
 
   const [selectedContent, setSelectedContent] = useState<ReactNode | null>(
     null
