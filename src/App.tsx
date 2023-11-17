@@ -3,7 +3,10 @@ import Sidebar from "./components/ui/sidebar";
 import Maccordion from "./components/content/maccordion";
 import Malert from "./components/content/malert";
 import Malertdialogue from "./components/content/malertdialogue";
+import Mavatar from "./components/content/mavatar";
 import Mhovercard from "./components/content/mhovercard";
+import Mbadge from "./components/content/mbadge";
+import Mbutton from "./components/content/mbutton";
 
 function App() {
   const content: ReactNode[] = [
@@ -11,6 +14,9 @@ function App() {
     <Malert />,
     <Malertdialogue />,
     <Mhovercard />,
+    <Mavatar />,
+    <Mbadge />,
+    <Mbutton />,
   ];
 
   const [selectedContent, setSelectedContent] = useState<ReactNode | null>(
